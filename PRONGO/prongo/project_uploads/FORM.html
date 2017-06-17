@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Text Input Effects | Set 1</title>
+		<meta name="description" content="Simple ideas for enhancing text input interactions" />
+		<meta name="keywords" content="input, text, effect, focus, transition, interaction, inspiration, web design" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/set1.css" />
+
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		
+	</head>
+	<style>
+		div.submit
+		{
+			padding: 10px 20px 11px !important;
+			font-size: 21px !important;
+
+			font-weight: bold;
+
+			color: #ffffff;
+			border-radius: 100px;
+			-moz-border-radius: 100px;
+			-webkit-border-radius: 100px;
+
+			cursor: pointer;
+			box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+			-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+			-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+		}
+		.file-upload {
+			position: relative;
+			overflow: hidden;
+			margin: 10px;
+
+		}
+
+		.file-upload input.file-input {
+			position: absolute;
+			top: 0;
+			right: 0;
+			margin: 0;
+			padding: 0;
+			font-size: 20px;
+			cursor: pointer;
+			opacity: 0;
+			filter: alpha(opacity=0);
+
+		}
+		body {
+			background-color:lightgray;
+
+		}
+		div.submit{
+			text-align: center;
+		}
+
+	</style>
+	<body class="body">
+
+			<section class="content bgcolor-1">
+				<h2 class="nomargin-bottom"></h2>
+
+				<span class="input input--haruki">
+					<input class="input__field input__field--haruki" type="email" id="input-2" />
+					<label class="input__label input__label--haruki" for="input-1">
+						<span class="input__label-content input__label-content--haruki">EMAIL ID</span>
+					</label>
+				</span>
+				<span class="input input--haruki">
+					<input class="input__field input__field--haruki" type="text" id="input-3" />
+					<label class="input__label input__label--haruki" for="input-2">
+						<span class="input__label-content input__label-content--haruki">PROJECT NAME</span>
+					</label>
+				</span>
+				<span class="input input--haruki">
+					<input class="input__field input__field--haruki" type="text" id="input-4" />
+					<label class="input__label input__label--haruki" for="input-3">
+						<span class="input__label-content input__label-content--haruki">PROJECT TECHNOLOGY</span>
+					</label>
+				</span>
+				<span class="input input--haruki">
+					<input class="input__field input__field--haruki" type="text" id="input-5" />
+					<label class="input__label input__label--haruki" for="input-1">
+						<span class="input__label-content input__label-content--haruki">DESCRIPTION</span>
+					</label>
+				</span>
+				<div style="text-align:center" >
+					<input type="text" id="path" />
+					<button class="file-upload" >
+						<input type="file" class="file-input" id="myfile" name="myfile">Choose File</button>
+				<script>
+                    document.getElementById("myfile").onchange = function () {
+                        document.getElementById("path").value = this.value;
+                    };
+                </script>
+				</div>
+
+			         <div class="submit">
+					<input  type="submit">
+					 </div>
+
+			</section>
+
+	</body>
+</html>

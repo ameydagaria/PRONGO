@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Prongo-Project on the go</title>  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width , initial-scale=1"> 
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+</head>
+<style>
+ body{ 
+   background: url("12153-NOC0JL.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+   background-size: cover;
+}
+div.header{
+ margin-top:40px;
+ opacity:0.8;
+ background-color:#FF5722;
+ box-shadow:10px 10px 5px #888888;
+ font-family:Fredoka One;
+ }
+div.burger{
+  height:40px;
+  width:40px;
+}
+div.center{
+  position:absolute; /*it can be fixed too*/
+        left:0; right:0;
+        top:0; bottom:0;
+        margin:auto;
+
+        /*this to solve "the content will not be cut when the window is smaller than the content": */
+        max-width:100%;
+        max-height:100%;
+        overflow:auto;
+
+}
+div.icon{
+    width: 40px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+li.list{
+	font-family:Fredoka One;
+    color:black;
+	}
+div.main_heading
+{
+  text-align:center;
+  font-size:25px;
+  color:black;
+  font-family:Fredoka One;
+}	
+div.section
+{
+  margin-top:80px;
+  box-shadow:10px 10px 5px #888888;
+}
+img.section_image{
+ display:flex;
+ align-items:center;
+ margin:auto;
+ box-shadow:10px 10px 5px #888888;
+ height:200px;
+ margin-top:10px;
+}
+button.button_style
+{ 
+  background-color:#FF5722;
+  font-size:20px;
+  padding:5px;
+  opacity:0.8;
+  box-shadow:10px 10px 5px #888888;
+  height:50px;
+}
+   
+</style>
+<body class="container-fluid">
+   <div class="header">
+    <div class="row" style="padding:20px" >
+     <div class="col-xs-12 col-lg-1">
+     </div>	
+	 <div class="col-xs-8 col-lg-8 " style="height:40px;">
+	  <div class="main_heading" style=""><b>prongo</b></div>
+	 </div>
+     <div class="col-xs-2 col-lg-2 dropdown" style="height:40px">
+	    <div class="burger center dropdown-toggle" data-toggle="dropdown">
+           <div class="icon"></div>
+           <div class="icon"></div>
+           <div class="icon"></div> 
+		</div>
+        <ul class="dropdown-menu" style="width:100%;text-align:center;background-color:rgba(255,255,255,0);z-index:2;">
+		    <li class="list"><a href="user_dashboard.php">Dashboard</a></li><br>
+            <li class="list"><a href="login.php">login</a></li><br>
+            <li class="list"><a href="signup.php">signup</a></li><br>
+            <li class="list"><a href="#">Blog</a></li><br>
+         </ul>		
+	 </div>
+	 <div class="col-xs-12 col-lg-1">
+     </div>
+	</div> 
+   </div>
+   <!--HEADER COMPLETE -->
+   <div style="margin-top:100px">
+     <div class="row" style="font-size:50px;color:#FF5722;padding:40px;">
+	   <b class="col-xs-12">Need a project for your college?<b><br>
+	 </div>
+	 <div class="row" style="font-size:30px;color:#FF5722;margin-top:100px">
+	   <b class="col-xs-12"><i class="fa fa-check" aria-hidden="true"></i> Choose frome various project that have been developed by talented developers on various languages and frameworks.</b><br>
+ 	 </div>
+   </div>
+   <div class="row">
+     <button class="button_style col-xs-4" style="margin-top:30px">Login</button>   
+   </div>
+   <div style="margin-top:25%; padding:40px;background:solid;background-color:#FF5722;opacity:0.8">
+   <div class="row text-center main_heading">
+      <div> So you think you can code??</div>
+   </div>
+   <div class="row" style="margin-top:30px" >
+     <div class="col-xs-12 col-md-3 center-block" style="font-size:Fredoka One" >
+	    <img src="52-01-01.jpg" class="img-responsive image_card section_image">
+		<div style="text-align:center;width:100%;font-size:30px;margin-top:10px">Idea</div>
+	 </div>
+	 <div class="col-xs-12 col-md-3 center-block">
+	    <img src="design.jpg" class="img-responsive image_card section_image">
+		<div style="text-align:center;width:100%;font-size:30px;margin-top:10px">Design</div>
+	 </div>
+	 <div class="col-xs-12 col-md-3 center-block">
+	    <img src="programmer-working-on-the-computer_23-2147505689.jpg" class="img-responsive image_card section_image">
+		<div style="text-align:center;width:100%;font-size:30px;margin-top:10px">Develop</div>
+	 </div>
+	 <div class="col-xs-12 col-md-3 center-block">
+	    <img src="14886-NPTWNK.jpg" class="img-responsive image_card section_image">
+		<div style="text-align:center;width:100%;font-size:30px;margin-top:10px">Product</div>
+	 </div>
+	 
+	 
+   </div>
+   </div>
+   <div style="margin-top:50px; padding:40px;background:solid;background-color:#FF5722;opacity:0.8">
+   <div class="row text-center main_heading">
+      <div>Need a project?</div>
+   </div>
+   <div class="row" style="margin-top:30px" >
+     <div class="col-xs-12 col-md-3 center-block" style="font-size:Fredoka One" >
+	    <img src="7773.jpg" class="img-responsive image_card section_image">
+		<div style="text-align:center;width:100%;font-size:30px;margin-top:10px">Login</div>
+	 </div>
+	 <div class="col-xs-12 col-md-3 center-block">
+	    <img src="search.jpg" class="img-responsive image_card section_image">
+		<div style="text-align:center;width:100%;font-size:30px;margin-top:10px">Browse</div>
+	 </div>
+	 <div class="col-xs-12 col-md-3 center-block">
+	    <img src="programmer-working-on-the-computer_23-2147505689.jpg" class="img-responsive image_card section_image">
+		<div style="text-align:center;width:100%;font-size:30px;margin-top:10px">Develop</div>
+	 </div>
+	 <div class="col-xs-12 col-md-3 center-block">
+	    <img src="14886-NPTWNK.jpg" class="img-responsive image_card section_image">
+		<div style="text-align:center;width:100%;font-size:30px;margin-top:10px">Product</div>
+	 </div>
+	 
+	 
+   </div>
+   </div>
+   
+   <div class="">
+    <div>
+	  
+    </div>	
+   </div>
+   <!--<div class="section">
+     <div class="row">
+	    <div class="col-xs-12 col-md-6" style="padding:20px;background-color:#FF5722;height:400px; ">
+		  <div class="row">
+		    <div class="col-xs-1">
+			</div>
+		    <div class="col-xs-5">
+			  <img src="52-01-01.jpg" class="img-responsive image_card" style="height:100px">
+			</div>
+			<div class="col-xs-5 item-center">
+			  Have an idea 
+			</div>
+			<div class="col-xs-1">
+			</div>
+		  </div>
+		  <div class="row">
+		    <div class="col-xs-1">
+			</div>
+		    <div class="col-xs-5">
+			  <img src="52-01-01.jpg" class="img-responsive image_card" style="height:100px">
+			</div>
+			<div class="col-xs-5 item-center" style="padding:10px">
+			  Have an idea 
+			</div>
+			<div class="col-xs-1">
+			</div>
+		  </div>
+		</div>
+		
+		<div class="col-xs-12 col-md-6 center-block">
+		  <img src="programmer-working-on-the-computer_23-2147505689.jpg" class="img-responsive section_image">
+		</div>
+	 </div>
+   </div>-->
+   <div style="margin-bottom:50px;">
+   </div>
+<script>
+
+</script>
+</body>
+</html>
